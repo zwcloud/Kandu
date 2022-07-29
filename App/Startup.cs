@@ -194,7 +194,7 @@ namespace Kandu
             }
         }
 
-        public virtual async void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public virtual void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             //get environment based on application build
             App.Environment = (env.EnvironmentName.ToLower()) switch
